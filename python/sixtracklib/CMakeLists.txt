@@ -37,7 +37,7 @@ install( CODE
      ${SIXTRL_APERTURE_CHECK_FEATURES_INSTALL_STR}
 
      message( STATUS \"Generating: ${SIXTRL_PY_INSTALL_PATH}\" )
-     configure_file( \"${SIXTRL_PY_IN_FILE}\" \"${SIXTRL_PY_INSTALL_PATH}\"
+     configure_file( \"${CMAKE_CURRENT_SOURCE_DIR}/${SIXTRL_PY_IN_FILE}\" \"${SIXTRL_PY_INSTALL_PATH}\"
      @ONLY ) "
 )
 

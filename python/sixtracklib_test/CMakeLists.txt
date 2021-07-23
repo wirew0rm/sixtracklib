@@ -35,7 +35,7 @@ install( CODE
      set( PYTHON_HAS_TESTDATA_DIR ${PYTHON_HAS_TESTDATA_DIR} )
 
      message( STATUS \"Generating: ${SIXTRL_PY_INSTALL_PATH}\" )
-     configure_file( \"${SIXTRL_PY_IN_FILE}\" \"${SIXTRL_PY_INSTALL_PATH}\"
+     configure_file( \"${CMAKE_CURRENT_SOURCE_DIR}/${SIXTRL_PY_IN_FILE}\" \"${SIXTRL_PY_INSTALL_PATH}\"
      @ONLY ) "
 )
 
